@@ -2,8 +2,9 @@ function isEnoughCapacity(products, containerSize) {
     let sum = 0;
     for (const element in products) {
         sum += products[element];
+        console.log("🚀 ~ isEnoughCapacity ~ sum:", sum)
     }
-    return sum >= containerSize;
+    return sum <= containerSize;
 }
 
 
